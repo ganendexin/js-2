@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+     // 100到1000之间数位的3次方相加等于本身
+
+    // for ( var i = 100; i<1000;i++) {
+    // 	var gewei = Math.pow(Math.floor(i%10) , 3);
+    // 	var shiwei = Math.pow(Math.floor(i/10)%10 , 3);
+    // 	var baiwei = Math.pow ( Math.floor(i/100) , 3);
+    // 	if(i == gewei + shiwei + baiwei) {
+    // 		alert(i);
+    // 	}
+    // }
+
+
+
+    //while写
+
+
+
+    var i = 100 ;
+    while(i<1000) {
+    	var gewei = Math.pow(i%10 , 3);
+    	var shiwei = Math.pow(Math.floor(i/10)%10 , 3);
+    	var baiwei = Math.pow(Math.floor(i/100) , 3);
+    	if(i == gewei + shiwei +baiwei) {
+    		alert(i);
+    	}
+    	i++;
+    }
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

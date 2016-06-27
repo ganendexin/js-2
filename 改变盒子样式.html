@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box {
+			width: 100px;
+			height: 100px;
+			background: pink;
+		}
+	</style>
+	
+</head>
+<body>
+	<div id="box"></div>
+		<button id="btn1">该变宽度</button>
+		<button id="btn2">改变高度</button>
+		<button id="btn3">改变颜色</button>
+		<button id="btn4">改变内容</button>
+	
+</body>
+</html>
+<script type="text/javascript">
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+var btn3 = document.getElementById("btn3");
+var btn4 = document.getElementById("btn4");
+var one = document.getElementById("box");
+btn1.onclick = function(){
+	one.style.width= "300px";
+}
+btn2.onclick = function() {
+	one.style.height="300px"
+}
+btn3.onclick = function() {
+	one.style.backgroundColor="red";
+}
+btn4.onclick = function() {
+	one.innerHTML = "我操，牛逼啊";
+}
+
+	</script>
